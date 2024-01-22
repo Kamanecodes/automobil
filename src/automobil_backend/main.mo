@@ -1,5 +1,11 @@
 actor {
-  public query func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
-  };
+type Principal = Blob;
+
+type CarInfo = {
+  owner: Principal;
+  make: Text;
+  model: Text;
+  year: Nat;
+
 };
+}

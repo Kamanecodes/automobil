@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "automobil_backend": {
+      "main": "src/automobil_backend/main.mo",
+      "type": "motoko"
+    },
+    "automobil_frontend": {
+      "dependencies": [
+        "automobil_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/automobil_frontend/src/index.html"
+      },
+      "source": [
+        "src/automobil_frontend/assets",
+        "dist/automobil_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
